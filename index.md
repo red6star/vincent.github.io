@@ -1,7 +1,8 @@
 ---
 title: 主页
 layout: home
-list_title: "daily note"
+list_title: "daily note1"
+list_title: "daily note2"
 ---
 
 <p align=left>
