@@ -1,7 +1,7 @@
 ---
 title: 主页
 layout: home
-list_title: "xxx"
+list_title: "日记"
 ---
 
 <p align=left>
