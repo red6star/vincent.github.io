@@ -5,7 +5,8 @@ list_title: "日记"
 ---
 
 <p align=center>
-<img width=600 style="float:none" src="./assets/images/dolphin.jpg" /> </p>
+<img width=600 style="float:none" src="./assets/images/The_Tower_of_Babel.jpg" /> </p>
+
 ---
 <!-- <ul>
   {% for post in site.posts %}
