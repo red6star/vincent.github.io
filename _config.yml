@@ -59,10 +59,10 @@ header_pages:
    - header1.md
 
 
-relative_links:
-  enabled: true
-  collections: true
+#relative_links:
+#  enabled: true
+#  collections: true
 
-plugins:
- - jekyll-feed
- - jekyll-seo-tag
+#plugins:
+# - jekyll-feed
+# - jekyll-seo-tag
