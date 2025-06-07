@@ -4,7 +4,7 @@ layout: home
 list_title: "日记"
 ---
 
-<p align=left>
+<p align=center>
 <img width=600 style="float:none" src="./assets/images/dolphin.jpg" /> </p>
 ---
 <!-- <ul>
