@@ -1,7 +1,12 @@
 ---
 layout: post
+title: "markdown tutorial"
 categories: 教程
+author:
+- Vincent
 ---
+
+markdown 基本语法的有记录尝试
 
 # 文本
 
