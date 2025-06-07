@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 生活
+categories: 教程
 ---
 
 just a test
