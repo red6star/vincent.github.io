@@ -44,7 +44,7 @@ markdown 基本语法的有记录尝试
 
 6. 写的\6. 显示的是2.
 
-    8. 写的\8. 显示的是8.
+    8. 写的\8. 显示的是8.【VScode 和 网页 显示不同】
 
     30. 写的\30. 现实的9.【后续有序列表会在第一个的基础上+1】
 
@@ -71,7 +71,7 @@ markdown 基本语法的有记录尝试
 
 \!\[名称\]\(地址\) 会不显示名称，只显示图片：
 
-![尼德兰勃鲁盖尔的《巴别塔》](./../assets/images/The_Tower_of_Babel.jpg)
+![尼德兰勃鲁盖尔的《巴别塔》](./../assets/images/20250608-The_Tower_of_Babel.jpg)
 
 ---
 
@@ -81,7 +81,7 @@ markdown 基本语法的有记录尝试
 
 \[超链接显示名\]\(超链接地址 "超链接title(可选)"\)：
 
-[尼德兰勃鲁盖尔的《巴别塔》](./../assets/images/The_Tower_of_Babel.jpg "我想借此偷窥这个世界")
+[尼德兰勃鲁盖尔的《巴别塔》](./../assets/images/20250608-The_Tower_of_Babel.jpg "我想借此偷窥这个世界")
 
 ---
 
@@ -89,13 +89,13 @@ markdown 基本语法的有记录尝试
 
 \[\!\[超链接显示名\]\(超链接地址 "超链接title(可选)"\)\](链接)：
 
-[![尼德兰勃鲁盖尔的《巴别塔》](./../assets/images/The_Tower_of_Babel.jpg "我想借此偷窥这个世界")](https://red6star.github.io/vincent.github.io/)
+[![尼德兰勃鲁盖尔的《巴别塔》](./../assets/images/20250608-The_Tower_of_Babel.jpg "我想借此偷窥这个世界")](https://red6star.github.io/vincent.github.io/)
 
 
 # 特殊符号
 
 \< 在HTML中为起始标签；
 
-\& 在HTML中用于标记；
+& 在HTML中用于标记；
 
 Markdown 可用HTML标签。
