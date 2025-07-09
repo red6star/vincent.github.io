@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "等间距采用"
-categories: 教程
+title: "等间距采样"
+categories: study
 author:
 - Vincent
 ---
