@@ -4,11 +4,7 @@ categories: tools
 title: demo a image as summary
 ---
 
-![link demo]({{ site.baseurl }}{% link assets/images/dolphin.jpg %})
-
 `{% raw %}![link demo]({{ site.baseurl }}{% link assets/images/dolphin.jpg %}){% endraw %}`
-
-![](../assets/images/dolphin.jpg)
 
 `![](../assets/images/dolphin.jpg)`
 
