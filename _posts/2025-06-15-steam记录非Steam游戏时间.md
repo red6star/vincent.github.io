@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "尝试-用steam记录非steam游戏的时间"
-categories: 游戏
+categories: life
 author:
 - Vincent
 ---

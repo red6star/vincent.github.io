@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "markdown tutorial"
-categories: 锻炼
+categories: tools
 author:
 - Vincent
 ---

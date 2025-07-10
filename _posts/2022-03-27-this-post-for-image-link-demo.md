@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: work
+categories: tools
 title: demo a image as summary
 ---
 
