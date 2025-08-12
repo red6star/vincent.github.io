@@ -1,0 +1,68 @@
+title: 我想借此偷窥这个世界
+author:
+  name: Vincent
+  # email: 
+description: > # this means to ignore newlines until "show_excerpts:"
+  去码头整点薯条
+show_excerpts: true # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+  skin: classic
+  # skin: classic, dark, Solarized-dark, Solarized
+  # generate social links in footer
+  social_links:
+    #twitter: Vincent
+    github:  red6star
+    # devto: jekyll
+    # dribbble: Vincent
+    # facebook: Vincent
+    # flickr:   Vincent
+    # instagram: Vincent
+    # linkedin: Vincent
+    # pinterest: Vincent
+    # youtube: Vincent
+    # youtube_channel: xxx
+    # youtube_channel_name: xxx
+    # telegram: Vincent
+    # googleplus: Vincent
+    # microdotblog: Vincent
+    # keybase: Vincent
+
+    # Mastodon instances
+    # mastodon:
+    # - username: Vincent
+    #   instance: example.com
+    # - username: Vincent
+    #   instance: example.com
+
+    # GitLab instances
+    # gitlab:
+    # - username: Vincent
+    #   instance: example.com
+    # - username: Vincent
+    #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+# Build settings
+theme: minima
+header_pages:
+   - index.md
+   - about.md
+   - category.md
+   - header1.md
+
+
+#relative_links:
+#  enabled: true
+#  collections: true
+
+#plugins:
+# - jekyll-feed
+# - jekyll-seo-tag
