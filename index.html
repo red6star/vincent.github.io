@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Vincent</title><meta name="author" content="Sung KuangI"><meta name="copyright" content="Sung KuangI"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="我想在此偷窥这个世界">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vincent">
+<meta property="og:url" content="https://www.red6star.top/index.html">
+<meta property="og:site_name" content="Vincent">
+<meta property="og:description" content="我想在此偷窥这个世界">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.red6star.top/img/%E7%A6%85.png">
+<meta property="article:author" content="Sung KuangI">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.red6star.top/img/%E7%A6%85.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Vincent",
+  "url": "https://www.red6star.top/"
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.red6star.top/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Vincent',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/Babel.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/%E7%A6%85.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">类别</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-book"></i><span> 留言板</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/Babel.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Vincent</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-book"></i><span> 留言板</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">Vincent</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/08/13/20250813-%E6%96%B0%E6%89%8B%E5%B0%8F%E7%99%BD%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/" title="新手小白从0开始搭建Hexo博客">新手小白从0开始搭建Hexo博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-08-13T12:46:26.000Z" title="发表于 2025-08-13 20:46:26">2025-08-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></span></div><div class="content">前言基于本博客的搭建过程，给出从0开始搭建博客的流程。 本博客第一版是基于 Jekyll 搭建的，对应的分支 Jekyll 仍然保留在本仓库中。 后续改为基于 Hexo 的Butterfly 主题搭建，并通过 GitHub 双仓库实现在私有仓库备份，并通过GitHub Actions部署到公开仓库 Hexo。 博客还具有 Valine 和 Utterances 的评论区，一个可以自由评论，一个通过GitHub登录和第三个仓库保存评论。 因此，本博客搭建流程需要三个仓库，分别用于备份、部署和评论。 本人又购买了 red6star.top 域名，用于访问本博客，即目前所显示的网址。 准备强烈建议通过 GitHub Desktop 管理各个仓库和分支，本人在搭建仓库过程中，由于对Git语言的不甚熟练，做了很多无用功。 Step1建立三个GitHub仓库仓库1为私有仓库，用于备份； 仓库2为公开 .io 仓库，用于部署博客； 仓库3为公开仓库，用于存储 Utterances 评论。 具体过程可参考其他相关博客。（有机会我再自己写一遍轮子） 配置 SSH 密钥SSH密钥用于本地向远程备份仓...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/08/12/My-New-Post/" title="My New Post">My New Post</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-08-12T08:24:56.000Z" title="发表于 2025-08-12 16:24:56">2025-08-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></span></div><div class="content">这是一个测试，参考牛人实现自动部署，而非一键部署  </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/08/11/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-08-11T08:24:56.000Z" title="发表于 2025-08-11 16:24:56">2025-08-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to remote sites1$ hexo deploy  More info: Deployment </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/07/30/Zotero+word+%E4%B8%AD%E6%96%87%E6%9C%9F%E5%88%8A%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E6%A0%BC%E5%BC%8F/" title="Zotero+word+中文期刊参考文献格式">Zotero+word+中文期刊参考文献格式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-07-30T02:09:06.000Z" title="发表于 2025-07-30 10:09:06">2025-07-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">Zotero+ Word + 中文期刊：属性拉满！  参考资料：  https://gitee.com/eduyob/citation-styles  在 CSL (Citation Style Language) 文件中，要将期刊名称设置为斜体，可以使用 &lt;text&gt; 标签的 font-style 属性。以下是一个示例： 123xml&lt;macro name=&quot;journal&quot;&gt;    &lt;text variable=&quot;container-title&quot; font-style=&quot;italic&quot;/&gt;&lt;/macro&gt;  在这个例子中，container-title 通常代表期刊名称，通过 font-style=&quot;italic&quot; 的设置，使其以斜体显示。您可以将这个宏添加到适当的位置，以确保在引用中期刊名称会以斜体格式出现。   3.[ ]的定义：prefix&#x3D;”[“ suffix&#x3D;”]” 4.当中文期刊要求参考文献不带最后的句点时，理应通过 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/07/17/%E9%80%9A%E8%BF%87xx%E6%8F%90%E9%AB%98%E5%AE%9E%E9%AA%8C%E5%9B%BE%E5%83%8F%E5%88%86%E8%BE%A8%E7%8E%87/" title="通过Real-GUI提高实验图片清晰度">通过Real-GUI提高实验图片清晰度</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-07-17T02:09:06.000Z" title="发表于 2025-07-17 10:09:06">2025-07-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">Real-GUI 傻瓜式提高实验图片的清晰度，还不会有AI在里面捣乱 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/07/01/%E4%BD%BF%E7%94%A8origin%E7%AD%89%E9%97%B4%E8%B7%9D%E9%87%87%E6%A0%B7paraveiw%E6%95%B0%E6%8D%AE/" title="等间距采样">等间距采样</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-07-01T02:09:06.000Z" title="发表于 2025-07-01 10:09:06">2025-07-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">不妨一看！ 使用 paraview 提取的界面通常间隔不均匀，很难用于下一步的数据分析，如FFT。可以通过origin进行均匀插值，得动等间距数据。 [TOC]  等间距paraview 原始数据</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/06/17/%E6%9C%89%E8%B6%A3%E7%9A%84%E7%BD%91%E5%9D%80/" title="视频分享">视频分享</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-06-17T02:09:06.000Z" title="发表于 2025-06-17 10:09:06">2025-06-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></span></div><div class="content">不妨一看！ 打算在这里收藏一下喜欢的视频，主要是B的，甚至可能全都是B的。 [TOC]  张艺谋的2008才是项目经理的必修课 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/06/15/steam%E8%AE%B0%E5%BD%95%E9%9D%9ESteam%E6%B8%B8%E6%88%8F%E6%97%B6%E9%97%B4/" title="尝试-用steam记录非steam游戏的时间">尝试-用steam记录非steam游戏的时间</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-06-15T02:09:06.000Z" title="发表于 2025-06-15 10:09:06">2025-06-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B8%B8%E6%88%8F/">游戏</a></span></div><div class="content">大失败！ 最近在玩CDDA，由于几乎所有游戏都在 steam 平台，已经被 steam 养好了。 想用steam记录玩CDDA的时间，结果大失败。 最终决定纠正自己，不要被 steam 裹挟，游戏只是游戏，游戏时长什么的都不重要。 重点还不如在这里谢谢 CDDA 的故事。 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/06/08/markdown_test/" title="markdown test">markdown test</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-06-08T02:09:06.000Z" title="发表于 2025-06-08 10:09:06">2025-06-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="content">markdown 基本语法的有记录尝试 文本* 用于斜体文本：斜体文本 _ 也可以用于斜体文本：斜体文本 ** 用于加粗文本：加粗文本 __ 也可以用于加粗文本：加粗文本 *** 同时粗体和斜体：粗斜体 引用 &gt; 这个东西的名词叫做块引用  因为能块引用?用 &gt;&gt; 甚至能够嵌套引用  还能嵌套  - 无序列表？     列表 - 无序列表   * 无序列表   + 无序列表  - 缩进无序列表     其中也可以各种嵌套加嵌套   [数字.] 即为有序列表  写的\6. 显示的是2.  写的\8. 显示的是8.【VScode 和 网页 显示不同】  写的\30. 现实的9.【后续有序列表会在第一个的基础上+1】      一个制表位或四个空格缩进，为代码块 \LaTeX   代码块中的需要加倍：    \latex       如果不想缩进，可以用围栏代码块~~~ 或者 `&#96;&#96; 123&#123;    \latex&#125;  图片![名称](地址) 会不显示名称，只显示图片：   [名称](地址) 会显示名称，图片为超链接： 或者说： [超...</div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/%E7%A6%85.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Sung KuangI</div><div class="author-info-description">我想在此偷窥这个世界</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">类别</div><div class="length-num">4</div></a></div></div><div class="sticky_layout"><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">9</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-08-14T15:13:05.377Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div class="footer-other"><div class="footer-copyright"></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (true) {
+      const sub = ["人之生也直 罔之生也幸而免","三寸气在千般用 一日无常万事休"].slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  typedJSFn.processSubtitle(["人之生也直 罔之生也幸而免","三寸气在千般用 一日无常万事休"])
+}
+typedJSFn.run(subtitleType)</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

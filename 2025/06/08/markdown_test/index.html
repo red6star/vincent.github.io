@@ -1,0 +1,346 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>markdown test | Vincent</title><meta name="author" content="Sung KuangI"><meta name="copyright" content="Sung KuangI"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="markdown 基本语法的有记录尝试 文本* 用于斜体文本：斜体文本 _ 也可以用于斜体文本：斜体文本 ** 用于加粗文本：加粗文本 __ 也可以用于加粗文本：加粗文本 *** 同时粗体和斜体：粗斜体 引用 &gt; 这个东西的名词叫做块引用  因为能块引用?用 &gt;&gt; 甚至能够嵌套引用  还能嵌套  - 无序列表？     列表 - 无序列表   * 无序列表   + 无序列表  -">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown test">
+<meta property="og:url" content="https://www.red6star.top/2025/06/08/markdown_test/index.html">
+<meta property="og:site_name" content="Vincent">
+<meta property="og:description" content="markdown 基本语法的有记录尝试 文本* 用于斜体文本：斜体文本 _ 也可以用于斜体文本：斜体文本 ** 用于加粗文本：加粗文本 __ 也可以用于加粗文本：加粗文本 *** 同时粗体和斜体：粗斜体 引用 &gt; 这个东西的名词叫做块引用  因为能块引用?用 &gt;&gt; 甚至能够嵌套引用  还能嵌套  - 无序列表？     列表 - 无序列表   * 无序列表   + 无序列表  -">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.red6star.top/img/%E7%A6%85.png">
+<meta property="article:published_time" content="2025-06-08T02:09:06.000Z">
+<meta property="article:modified_time" content="2025-08-14T15:12:50.003Z">
+<meta property="article:author" content="Sung KuangI">
+<meta property="article:tag" content="markdown">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.red6star.top/img/%E7%A6%85.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "markdown test",
+  "url": "https://www.red6star.top/2025/06/08/markdown_test/",
+  "image": "https://www.red6star.top/img/%E7%A6%85.png",
+  "datePublished": "2025-06-08T02:09:06.000Z",
+  "dateModified": "2025-08-14T15:12:50.003Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Sung KuangI",
+      "url": "https://www.red6star.top"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.red6star.top/2025/06/08/markdown_test/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'markdown test',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/Babel.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/%E7%A6%85.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">类别</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-book"></i><span> 留言板</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent;"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Vincent</span></a><a class="nav-page-title" href="/"><span class="site-name">markdown test</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-book"></i><span> 留言板</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">markdown test</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-06-08T02:09:06.000Z" title="发表于 2025-06-08 10:09:06">2025-06-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-08-14T15:12:50.003Z" title="更新于 2025-08-14 23:12:50">2025-08-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">363</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>markdown 基本语法的有记录尝试</p>
+<h1 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h1><p>* 用于斜体文本：<em>斜体文本</em></p>
+<p>_ 也可以用于斜体文本：<em>斜体文本</em></p>
+<p>** 用于加粗文本：<strong>加粗文本</strong></p>
+<p>__ 也可以用于加粗文本：<strong>加粗文本</strong></p>
+<p>*** 同时粗体和斜体：<em><strong>粗斜体</strong></em></p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><blockquote>
+<p>&gt; 这个东西的名词叫做块引用</p>
+<blockquote>
+<p>因为能块引用?<br>用 &gt;&gt; 甚至能够嵌套引用</p>
+<blockquote>
+<p>还能嵌套</p>
+<ul>
+<li>- 无序列表？</li>
+</ul>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><ul>
+<li>- 无序列表</li>
+</ul>
+<ul>
+<li>* 无序列表</li>
+</ul>
+<ul>
+<li><p>+ 无序列表</p>
+<ul>
+<li>- 缩进无序列表</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>其中也可以各种嵌套加嵌套</p>
+</blockquote>
+<ol>
+<li><p>[数字.] 即为有序列表</p>
+</li>
+<li><p>写的\6. 显示的是2.</p>
+<ol start="8">
+<li><p>写的\8. 显示的是8.【VScode 和 网页 显示不同】</p>
+</li>
+<li><p>写的\30. 现实的9.【后续有序列表会在第一个的基础上+1】</p>
+</li>
+</ol>
+</li>
+</ol>
+<hr>
+<p>一个制表位或四个空格缩进，为代码块</p>
+<pre><code>\LaTeX
+</code></pre>
+<ul>
+<li><p>代码块中的需要加倍：</p>
+<ul>
+<li><pre><code>  \latex
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>如果不想缩进，可以用围栏代码块~~~ 或者 `&#96;&#96;</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    \latex</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p>![名称](地址) 会不显示名称，只显示图片：</p>
+<p><img src="/./../assets/images/20250608-The_Tower_of_Babel.jpg" alt="尼德兰勃鲁盖尔的《巴别塔》"></p>
+<hr>
+<p>[名称](地址) 会显示名称，图片为超链接：</p>
+<p>或者说：</p>
+<p>[超链接显示名](超链接地址 “超链接title(可选)”)：</p>
+<p><a href="./Babel.jpg" title="我想借此偷窥这个世界">尼德兰勃鲁盖尔的《巴别塔》</a></p>
+<hr>
+<p>给图片增加链接：</p>
+<p>[![超链接显示名](超链接地址 “超链接title(可选)”)](链接)：</p>
+<p><a target="_blank" rel="noopener" href="https://red6star.github.io/vincent.github.io/"><img src="/2025/06/08/markdown_test/Babel.jpg" alt="尼德兰勃鲁盖尔的《巴别塔》" title="我想借此偷窥这个世界"></a></p>
+<h1 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h1><p>&lt; 在HTML中为起始标签；</p>
+<p>&amp; 在HTML中用于标记；</p>
+<p>Markdown 可用HTML标签。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/markdown/">markdown</a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="comment-switch"><span class="first-comment">Valine</span><span id="switch-btn"></span><span class="second-comment">Utterances</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="utterances-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/%E7%A6%85.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Sung KuangI</div><div class="author-info-description">我想在此偷窥这个世界</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">类别</div><div class="length-num">4</div></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E6%9C%AC"><span class="toc-number">1.</span> <span class="toc-text">文本</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-number">2.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">3.</span> <span class="toc-text">列表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%BE%E7%89%87"><span class="toc-number">4.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7"><span class="toc-number">5.</span> <span class="toc-text">特殊符号</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: transparent;"><div class="footer-other"><div class="footer-copyright"></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const initValine = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyValine = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const valineConfig = {
+      el: '#vcomment',
+      appId: 'HWWjSbeMwCpqJi4dH8Ux156m-gzGzoHsz',
+      appKey: 'YcYCTO7ecpvmZi9qP2Y6pagT',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      visitor: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || window.location.pathname
+    }
+
+    new Valine(valineConfig)
+  }
+
+  const loadValine = async (el, path) => {
+    if (typeof Valine === 'function') {
+      initValine(el, path)
+    } else {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Valine' === 'Valine'
+      ? window.shuoshuoComment = { loadComment: loadValine }
+      : window.loadOtherComment = loadValine
+    return
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+  const getUtterancesTheme = theme => theme === 'dark' ? 'photon-dark' : 'github-light'
+
+  const loadUtterances = (el = document, key) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyUtterances = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const config = {
+      src: 'https://utteranc.es/client.js',
+      repo: 'red6star/vincent.github.io',
+      theme: getUtterancesTheme(document.documentElement.getAttribute('data-theme')),
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      'issue-term': isShuoshuo ? key : (option && option['issue-term']) || 'pathname'
+    }
+
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => ele.setAttribute(key, value))
+    el.querySelector('#utterances-wrap').appendChild(ele)
+  }
+
+  const changeUtterancesTheme = theme => {
+    const iframe = document.querySelector('#utterances-wrap iframe')
+    if (iframe) {
+      const message = {
+        type: 'set-theme',
+        theme: getUtterancesTheme(theme)
+      };
+      iframe.contentWindow.postMessage(message, 'https://utteranc.es')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeUtterancesTheme, 'utterances')
+
+  if (isShuoshuo) {
+    'Valine' === 'Utterances'
+      ? window.shuoshuoComment = { loadComment: loadUtterances }
+      : window.loadOtherComment = loadUtterances
+    return
+  }
+  
+  if ('Valine' === 'Utterances' || !false) {
+    if (false) btf.loadComment(document.getElementById('utterances-wrap'), loadUtterances)
+    else loadUtterances()
+  } else {
+    window.loadOtherComment = loadUtterances
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
