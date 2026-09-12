@@ -1,0 +1,373 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>OpenFOAM学习交流 | Vincent</title><meta name="author" content="Sung KuangI"><meta name="copyright" content="Sung KuangI"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="OpenFOAM学习交流">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OpenFOAM学习交流">
+<meta property="og:url" content="https://www.red6star.top/2026/06/17/20260618%20-%20OpenFOAM%E5%AD%A6%E4%B9%A0%E4%BA%A4%E6%B5%81/index.html">
+<meta property="og:site_name" content="Vincent">
+<meta property="og:description" content="OpenFOAM学习交流">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.red6star.top/img/%E7%A6%85.png">
+<meta property="article:published_time" content="2026-06-17T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-09-12T04:24:28.781Z">
+<meta property="article:author" content="Sung KuangI">
+<meta property="article:tag" content="OpenFOAM">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.red6star.top/img/%E7%A6%85.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "OpenFOAM学习交流",
+  "url": "https://www.red6star.top/2026/06/17/20260618%20-%20OpenFOAM%E5%AD%A6%E4%B9%A0%E4%BA%A4%E6%B5%81/",
+  "image": "https://www.red6star.top/img/%E7%A6%85.png",
+  "datePublished": "2026-06-17T16:00:00.000Z",
+  "dateModified": "2026-09-12T04:24:28.781Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Sung KuangI",
+      "url": "https://www.red6star.top"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.red6star.top/2026/06/17/20260618%20-%20OpenFOAM%E5%AD%A6%E4%B9%A0%E4%BA%A4%E6%B5%81/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'OpenFOAM学习交流',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/Babel.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/%E7%A6%85.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">31</div></a><a href="/categories/"><div class="headline">类别</div><div class="length-num">13</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-book"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent;"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Vincent</span></a><a class="nav-page-title" href="/"><span class="site-name">OpenFOAM学习交流</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-book"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">OpenFOAM学习交流</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-06-17T16:00:00.000Z" title="发表于 2026-06-18 00:00:00">2026-06-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-09-12T04:24:28.781Z" title="更新于 2026-09-12 12:24:28">2026-09-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%B7%A5%E4%BD%9C/">工作</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%B7%A5%E4%BD%9C/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.3k</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="OpenFOAM学习交流"><a href="#OpenFOAM学习交流" class="headerlink" title="OpenFOAM学习交流"></a>OpenFOAM学习交流</h1><h2 id="学习网站：安装、运行、算法、开发"><a href="#学习网站：安装、运行、算法、开发" class="headerlink" title="学习网站：安装、运行、算法、开发"></a>学习网站：安装、运行、算法、开发</h2><ul>
+<li>各版本OpenFOAM安装包：<a target="_blank" rel="noopener" href="https://dl.openfoam.com/">https://dl.openfoam.com/</a></li>
+<li>各版本OpenFOAM代码库：<a target="_blank" rel="noopener" href="https://gitlab.com/openfoam/core/openfoam">https://gitlab.com/openfoam/core/openfoam</a></li>
+<li>OF_Primer OpenFOAM入门：<a target="_blank" rel="noopener" href="https://www.topcfd.cn/Ebook/OF_Primer/OF_Primer/00A_%E5%BA%8F%E8%A8%80.html">https://www.topcfd.cn/Ebook/OF_Primer/OF_Primer/00A_%E5%BA%8F%E8%A8%80.html</a></li>
+</ul>
+<hr>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://www.dyfluid.com/index.html">http://www.dyfluid.com/index.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://cfd-china.com/category/6/openfoam">https://cfd-china.com/category/6/openfoam</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cfd-china.com/">https://www.cfd-china.com/</a></li>
+<li><a target="_blank" rel="noopener" href="https://forum.cfdac.com/">https://forum.cfdac.com/</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.tfd.chalmers.se/~hani/kurser/OS_CFD/">https://www.tfd.chalmers.se/~hani/kurser/OS_CFD/</a></li>
+<li><a target="_blank" rel="noopener" href="https://openfoam.org/dev/coding-style-guide/">https://openfoam.org/dev/coding-style-guide/</a></li>
+<li><a target="_blank" rel="noopener" href="https://aerosand.cn/tag/OpenFOAM">https://aerosand.cn/tag/OpenFOAM</a></li>
+<li><a target="_blank" rel="noopener" href="https://openfoam.top/">https://openfoam.top/</a></li>
+<li><a target="_blank" rel="noopener" href="https://openfoam.top/linuxLearning/">Linux 命令收藏</a></li>
+<li><a target="_blank" rel="noopener" href="https://edu.yanfabu.com/#/CurriculumDetail?id=491">研发埠 - OpenFOAM 基础应用以及代码解读</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/UnnamedMoose/BasicOpenFOAMProgrammingTutorials">https://github.com/UnnamedMoose/BasicOpenFOAMProgrammingTutorials</a></li>
+<li></li>
+</ul>
+<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">find . -<span class="built_in">type</span> f  -name <span class="string">&quot;fvOptions&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#删除带波浪线~后缀的文件</span></span><br><span class="line"></span><br><span class="line">find ./ -name <span class="string">&quot;*~&quot;</span> | xargs <span class="built_in">rm</span> -rf  </span><br><span class="line"></span><br><span class="line">grep -rn <span class="string">&quot;fieldFunctionObjects&quot;</span> ./</span><br><span class="line"></span><br><span class="line"><span class="comment">#挂载</span></span><br><span class="line"><span class="built_in">sudo</span> mount -t drvfs F: /mnt/f</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="wsl的安装、Ubuntu的启动和OpenFOAM的运行"><a href="#wsl的安装、Ubuntu的启动和OpenFOAM的运行" class="headerlink" title="wsl的安装、Ubuntu的启动和OpenFOAM的运行"></a>wsl的安装、Ubuntu的启动和OpenFOAM的运行</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/wsl/install">如何使用 WSL 在 Windows 上安装 Linux</a></li>
+<li><a target="_blank" rel="noopener" href="https://ubuntu.com/wsl/docs/stable/#ubuntu-on-wsl">Ubuntu on WSL</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-command-manual.html">Linux 命令导航</a></li>
+<li><a target="_blank" rel="noopener" href="https://openfoamwiki.net/index.php/Main_Page">Unofficial OpenFOAM wiki</a><ul>
+<li><a target="_blank" rel="noopener" href="https://www.openfoam.com/">.com版本</a>（v****）</li>
+<li><a target="_blank" rel="noopener" href="https://openfoam.org/">.org版本</a>（**）</li>
+<li><a target="_blank" rel="noopener" href="https://www.solids4foam.com/">https://www.solids4foam.com/</a></li>
+</ul>
+</li>
+</ul>
+<p><img src="/2026/06/17/20260618%20-%20OpenFOAM%E5%AD%A6%E4%B9%A0%E4%BA%A4%E6%B5%81/OpenFOAMVersion.png" alt="image-20260618100929729"></p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://gitlab.com/openfoam/core/openfoam/-/releases?after=eyJyZWxlYXNlZF9hdCI6IjIwMjEtMTItMjEgMTU6NDU6MDMuNjYwMDAwMDAwICswMDAwIiwiaWQiOiIxOTgzMzYzNiJ9">各.com版本下载地址</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://antoniozc666.github.io/2024/05/31/ubuntu22-04-an-zhuang-openfoam-v2212/">编译</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装必要软件</span></span><br><span class="line"><span class="built_in">sudo</span> apt update</span><br><span class="line"><span class="built_in">sudo</span> apt-get install -y build-essential flex bison git-core cmake zlib1g-dev libboost-system-dev libboost-thread-dev libopenmpi-dev openmpi-bin gnuplot libreadline-dev libncurses-dev libxt-dev </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#进入OpenFOAM所在目录</span></span><br><span class="line"><span class="built_in">cd</span> /home/czhang/openfoam/OpenFOAM-v2212</span><br><span class="line"></span><br><span class="line"><span class="comment">#测试系统</span></span><br><span class="line">foamSystemCheck</span><br><span class="line"></span><br><span class="line"><span class="comment">#切换到 OpenFOAM 主目录 （$WM_PROJECT_DIR）</span></span><br><span class="line">foam</span><br><span class="line"></span><br><span class="line"><span class="comment">#编译openfoam</span></span><br><span class="line"><span class="comment">#./Allwmake -j</span></span><br><span class="line">./Allwmake -q -j `<span class="built_in">nproc</span>`</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>本地常用命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span></span><br><span class="line"><span class="built_in">mkdir</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#linux查看当前路径</span></span><br><span class="line"><span class="built_in">pwd</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#linux查看当前任务</span></span><br><span class="line">top</span><br><span class="line"></span><br><span class="line"><span class="comment">#linux终止任务</span></span><br><span class="line"><span class="built_in">kill</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#linux挂载命令</span></span><br><span class="line"><span class="built_in">sudo</span> mount -t drvfs F: /mnt/f</span><br><span class="line"></span><br><span class="line"><span class="comment">#linux查找文件内关键词</span></span><br><span class="line">find . -<span class="built_in">type</span> f -print0 | xargs -0 grep <span class="string">&quot;tut&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#删除带波浪线~后缀的文件</span></span><br><span class="line">find ./ -name <span class="string">&quot;*~&quot;</span> | xargs <span class="built_in">rm</span> -rf</span><br><span class="line"></span><br><span class="line"><span class="comment">#wsl进入window</span></span><br><span class="line"><span class="built_in">cd</span> /mnt/</span><br><span class="line"></span><br><span class="line"><span class="comment">#wsl使用资源管理器打开当前路径</span></span><br><span class="line">explorer.exe . </span><br><span class="line"></span><br><span class="line">/home/song/OpenFOAM/OpenFOAM-v2212/etc/config.sh/aliases</span><br><span class="line"></span><br><span class="line">vi <span class="variable">$HOME</span>/.bashrc</span><br><span class="line"></span><br><span class="line"><span class="built_in">source</span> <span class="variable">$HOME</span>/OpenFOAM/OpenFOAM-dev/etc/bashrc</span><br><span class="line"></span><br><span class="line"><span class="built_in">alias</span> of2212Clean=<span class="string">&#x27;. ~/0penFOAM/0penF0AM-v2212/bin/tools/CleanFunctions&#x27;</span></span><br><span class="line"><span class="built_in">alias</span> of2212Run=<span class="string">&#x27;. ~/0penFOAM/OpenFOAM-v2212/bin/tools/RunFunctions&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#后处理</span></span><br><span class="line">interFoam -postProcess -field <span class="string">&quot; (p U)&quot;</span> -func forceCoeffsIncompressible &gt; log.post1 &amp;</span><br><span class="line"></span><br><span class="line">foamHelp boundary -field U</span><br><span class="line"></span><br><span class="line">simpleFoam -postProcess -func yPlus</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>超算常用命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 曙光网站</span></span><br><span class="line">https://www.scnet.cn/ui/mall/</span><br><span class="line"></span><br><span class="line">sbatch</span><br><span class="line"></span><br><span class="line">scancel</span><br><span class="line"></span><br><span class="line">squeue</span><br><span class="line"></span><br><span class="line"><span class="comment">#------------------------------------------------------------------------------</span></span><br><span class="line"><span class="comment">#软件库</span></span><br><span class="line"><span class="built_in">ls</span> /public/software/apps/openfoam/</span><br><span class="line"></span><br><span class="line"><span class="comment">## 调用曙光系统的paraview2.8</span></span><br><span class="line">$ module load ParaView/5.8.0-prebuild</span><br><span class="line">$ MESA_GL_VERSION_OVERRIDE=3.3 paraview</span><br><span class="line"><span class="comment">##调用kenshi自己的paraview5.11</span></span><br><span class="line">$ MESA_GL_VERSION_OVERRIDE=3.3 ./apps/ParaView-5.11.1/bin/paraview</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="批处理"><a href="#批处理" class="headerlink" title="批处理"></a>批处理</h1><p>of2212</p>
+<p>of2212RunFunctions &lt;&#x3D; of2212R+Tab</p>
+<p>cleanCaseWithoutPolyMesh &lt;&#x3D; of2212C+Tab</p>
+<p>cleanCaseWithoutPolyMesh</p>
+<h2 id="Z-1-CreateCase-bash"><a href="#Z-1-CreateCase-bash" class="headerlink" title="Z-1-CreateCase.bash"></a>Z-1-CreateCase.bash</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash </span><br><span class="line">#三维-液滴半径-气泡半径-气泡内压-算例生成</span><br><span class="line"></span><br><span class="line"># 液滴半径dropletRs  (m)</span><br><span class="line">dRs=(0.2e-3)</span><br><span class="line"></span><br><span class="line"># 气泡半径dropletRs (m)</span><br><span class="line">bRs=(0.1e-3)</span><br><span class="line"></span><br><span class="line"># 气泡内压bubblePs (Pa)</span><br><span class="line">bPs=(10e6 20e6)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">for dR in &quot;$&#123;dRs[@]&#125;&quot;; do</span><br><span class="line">	for bR in &quot;$&#123;bRs[@]&#125;&quot;; do</span><br><span class="line">      for bP in &quot;$&#123;bPs[@]&#125;&quot;; do</span><br><span class="line">        </span><br><span class="line">            cp -rp ./3D-xmm-xmm-xMPa-Tait ./3D-$&#123;dR&#125;m-$&#123;bR&#125;m-$&#123;bP&#125;Pa-10um</span><br><span class="line">            echo &quot;3D-$&#123;dR&#125;m-$&#123;bR&#125;m-$&#123;bP&#125;Pa&quot;</span><br><span class="line">            cd 3D-$&#123;dR&#125;m-$&#123;bR&#125;m-$&#123;bP&#125;Pa-10um</span><br><span class="line">            </span><br><span class="line">            foamDictionary system/setFieldsDict \</span><br><span class="line">                -entry regions \</span><br><span class="line">                -set \</span><br><span class="line">                &quot;(sphereToCell   </span><br><span class="line">                &#123;</span><br><span class="line">                centre (0 0 0);</span><br><span class="line">                radius $&#123;dR&#125;;</span><br><span class="line">                fieldValues</span><br><span class="line">                    (</span><br><span class="line">                        volScalarFieldValue alpha.water 1</span><br><span class="line">                        volScalarFieldValue p_rgh 1e5</span><br><span class="line">                        volScalarFieldValue p 1e5</span><br><span class="line">                        volScalarFieldValue T 300</span><br><span class="line">                    );</span><br><span class="line">                &#125;</span><br><span class="line">            </span><br><span class="line">                sphereToCell</span><br><span class="line">                &#123;</span><br><span class="line">                centre (0 0 0);</span><br><span class="line">                radius $&#123;bR&#125;;</span><br><span class="line">                fieldValues</span><br><span class="line">                    (</span><br><span class="line">                        volScalarFieldValue alpha.water 0</span><br><span class="line">                        volScalarFieldValue p_rgh $&#123;bP&#125;</span><br><span class="line">                        volScalarFieldValue p $&#123;bP&#125;</span><br><span class="line">                        volScalarFieldValue T 1500</span><br><span class="line">                    );</span><br><span class="line">                &#125;)&quot;</span><br><span class="line">                </span><br><span class="line">            touch a.foam</span><br><span class="line">            sbatch pre.slurm </span><br><span class="line">            cd ..</span><br><span class="line">        done</span><br><span class="line">    done</span><br><span class="line">done</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="pre-slurm"><a href="#pre-slurm" class="headerlink" title="pre.slurm"></a>pre.slurm</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash </span><br><span class="line">#SBATCH -J S_P_3D    		   ##作业名</span><br><span class="line">#SBATCH -p xahcnormal    		##队列</span><br><span class="line">#SBATCH -N 1    				##申请计算节点数</span><br><span class="line">#SBATCH --cpus-per-task=6      #每进程占用核数</span><br><span class="line">#SBATCH --error=%J.run.err</span><br><span class="line">#SBATCH --output=%J.run.out</span><br><span class="line">#------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">module purge </span><br><span class="line">module load OpenFOAM/v2212-hpcx-gcc-7.3.1</span><br><span class="line">module list</span><br><span class="line"></span><br><span class="line">source /public/software/apps/OpenFOAM/v2212/hpcx-gcc-7.3.1/OpenFOAM-v2212/etc/bashrc</span><br><span class="line">source /public/software/apps/OpenFOAM/v2212/hpcx-gcc-7.3.1/OpenFOAM-v2212/bin/tools/RunFunctions</span><br><span class="line">#------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">#runApplication blockMesh</span><br><span class="line"></span><br><span class="line">#fluent3DMeshToFoam fluent.msh</span><br><span class="line"></span><br><span class="line">restore0Dir</span><br><span class="line"></span><br><span class="line">touch a.foam</span><br><span class="line"></span><br><span class="line">#funkySetFields -time 0</span><br><span class="line"></span><br><span class="line">runApplication setFields</span><br><span class="line"></span><br><span class="line">runApplication decomposePar</span><br></pre></td></tr></table></figure>
+
+<h2 id="Z-2-RunCase-bash"><a href="#Z-2-RunCase-bash" class="headerlink" title="Z-2-RunCase.bash"></a>Z-2-RunCase.bash</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash </span><br><span class="line">#三维-液滴半径-气泡半径-气泡内压-算例生成</span><br><span class="line"></span><br><span class="line"># 液滴半径dropletRs  (m)</span><br><span class="line">dRs=(0.2e-3)</span><br><span class="line"></span><br><span class="line"># 气泡半径dropletRs (m)</span><br><span class="line">bRs=(0.1e-3)</span><br><span class="line"></span><br><span class="line"># 气泡内压bubblePs (Pa)</span><br><span class="line">bPs=(10e6 20e6)</span><br><span class="line"></span><br><span class="line">for dR in &quot;$&#123;dRs[@]&#125;&quot;; do</span><br><span class="line">	for bR in &quot;$&#123;bRs[@]&#125;&quot;; do</span><br><span class="line">      for bP in &quot;$&#123;bPs[@]&#125;&quot;; do</span><br><span class="line"></span><br><span class="line">            echo &quot;3D-$&#123;dR&#125;m-$&#123;bR&#125;m-$&#123;bP&#125;Pa&quot;</span><br><span class="line">            cd 3D-$&#123;dR&#125;m-$&#123;bR&#125;m-$&#123;bP&#125;Pa-10um</span><br><span class="line"></span><br><span class="line">            sbatch run.slurm </span><br><span class="line">            cd ..</span><br><span class="line">            </span><br><span class="line">        done</span><br><span class="line">    done</span><br><span class="line">done</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="run-slurm"><a href="#run-slurm" class="headerlink" title="run.slurm"></a>run.slurm</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#!/bin/bash </span><br><span class="line">#SBATCH -J S_R_3D	    		##作业名</span><br><span class="line">#SBATCH -p xahcnormal    		##队列</span><br><span class="line">#SBATCH -N 2    				##申请计算节点数</span><br><span class="line">#SBATCH --ntasks-per-node=32   	##每节点进程数</span><br><span class="line">#SBATCH --error=%J.run.err</span><br><span class="line">#SBATCH --output=%J.run.out</span><br><span class="line">#------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">module purge </span><br><span class="line">module load OpenFOAM/v2212-hpcx-gcc-7.3.1</span><br><span class="line">module list</span><br><span class="line"></span><br><span class="line">source /public/software/apps/OpenFOAM/v2212/hpcx-gcc-7.3.1/OpenFOAM-v2212/etc/bashrc</span><br><span class="line">source /public/software/apps/OpenFOAM/v2212/hpcx-gcc-7.3.1/OpenFOAM-v2212/bin/tools/RunFunctions</span><br><span class="line"></span><br><span class="line"># source ~/apps/OpenFOAM-v2212/etc/bashrc</span><br><span class="line"># source ~/apps/OpenFOAM-v2212/bin/tools/RunFunctions</span><br><span class="line">#------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">#srun --mpi=pmix_v3 compressibleInterIsoFoam -parallel &gt; log.compressibleInterIsoFoam</span><br><span class="line"></span><br><span class="line">srun --mpi=pmix_v3 compressibleInterIsoFoamWithoutT -parallel &gt; log.compressibleInterIsoFoamWithoutT</span><br><span class="line"></span><br><span class="line">srun -N1 -n1 -c3 reconstructPar -fields &#x27;(alpha.water)&#x27; &gt; log.reconstruct.Iso.alpha.water &amp;</span><br><span class="line">srun -N1 -n1 -c3 reconstructPar -fields &#x27;(U)&#x27; &gt; log.reconstruct.Iso.U &amp;</span><br><span class="line">srun -N1 -n1 -c3 reconstructPar -fields &#x27;(p)&#x27; &gt; log.reconstruct.Iso.p &amp;</span><br><span class="line"></span><br><span class="line">wait</span><br><span class="line"></span><br><span class="line">srun rm -rf process*</span><br></pre></td></tr></table></figure>
+
+<h2 id="viscosity"><a href="#viscosity" class="headerlink" title="viscosity"></a>viscosity</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment">#list=(1.5 2.5) # mm</span></span><br><span class="line"><span class="comment">#listPara=(0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9) #Pa s</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#list=(1.5) # mm</span></span><br><span class="line"><span class="comment">#listPara=(1 2 3) #Pa s</span></span><br><span class="line"></span><br><span class="line">list=(1.8) <span class="comment"># mm</span></span><br><span class="line">listPara=(1 1.5 2 2.5 3) <span class="comment">#Pa s </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">lenj=<span class="variable">$&#123;#list[*]&#125;</span></span><br><span class="line">leni=<span class="variable">$&#123;#listPara[*]&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> ((j = <span class="number">0</span>; j&lt;lenj; j++))</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span> ((i = <span class="number">0</span>; i&lt;leni; i++))</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">cp</span> -rp ./<span class="variable">$&#123;list[j]&#125;</span>mm.orig ./45MPa_<span class="variable">$&#123;listPara[i]&#125;</span>mu_<span class="variable">$&#123;list[j]&#125;</span>mm</span><br><span class="line">    <span class="built_in">echo</span> <span class="variable">$&#123;listPara[i]&#125;</span> mu</span><br><span class="line">    <span class="built_in">echo</span> <span class="variable">$&#123;list[j]&#125;</span> mm</span><br><span class="line">    <span class="built_in">cd</span> 45MPa_<span class="variable">$&#123;listPara[i]&#125;</span>mu_<span class="variable">$&#123;list[j]&#125;</span>mm</span><br><span class="line">    foamDictionary -entry <span class="string">&quot;mixture.transport.mu&quot;</span> -<span class="built_in">set</span> <span class="string">&quot;<span class="variable">$&#123;listPara[i]&#125;</span>&quot;</span> ./constant/thermophysicalProperties.water</span><br><span class="line">    </span><br><span class="line">    sh pre.sh &amp; </span><br><span class="line">    <span class="built_in">cd</span> ..</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="文件结构"><a href="#文件结构" class="headerlink" title="文件结构"></a>文件结构</h1><p><img src="/2026/06/17/20260618%20-%20OpenFOAM%E5%AD%A6%E4%B9%A0%E4%BA%A4%E6%B5%81/%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.png" alt="文件结构"></p>
+<h2 id="后处理"><a href="#后处理" class="headerlink" title="后处理"></a>后处理</h2><h3 id="OpenFOAM"><a href="#OpenFOAM" class="headerlink" title="OpenFOAM"></a>OpenFOAM</h3><h3 id="paraview"><a href="#paraview" class="headerlink" title="paraview"></a>paraview</h3><h2 id="常用软件推荐"><a href="#常用软件推荐" class="headerlink" title="常用软件推荐"></a>常用软件推荐</h2><ul>
+<li><p>paraview</p>
+</li>
+<li><p>Snipaste</p>
+</li>
+<li><p>Zotero</p>
+</li>
+<li><p>latex</p>
+</li>
+<li><p>Origin</p>
+</li>
+<li><p>ps</p>
+</li>
+<li></li>
+</ul>
+<hr>
+<ul>
+<li><p>python</p>
+</li>
+<li><p>SpaceSniffer</p>
+</li>
+<li><p>everything</p>
+</li>
+<li><p>PDFgear</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>sublime</li>
+<li></li>
+</ul>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Alt+Shift+左键 的列操作</span><br><span class="line">Shift\Ctrl在文件夹内的选择</span><br><span class="line">Shift\Ctrl在文本文件内选择</span><br><span class="line">Shift\Alt对内容的移动</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h1><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.trae.cn/">https://www.trae.cn/</a></p>
+<p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+</blockquote>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/OpenFOAM/">OpenFOAM</a></div></div><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/09/05/20250905%20-%20OpenFOAM_tips/" title="OpenFOAM_tips"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-09-05</div><div class="info-item-2">OpenFOAM_tips</div></div><div class="info-2"><div class="info-item-1">记录在使用OpenFOAM过程中的奇技淫巧</div></div></div></a><a class="pagination-related" href="/2025/09/30/20251001-%20Code_tips/" title="Code_Tips"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-10-01</div><div class="info-item-2">Code_Tips</div></div><div class="info-2"><div class="info-item-1">记录用到的python、Latex等命令</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="comment-switch"><span class="first-comment">Valine</span><span id="switch-btn"></span><span class="second-comment">Utterances</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="utterances-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/%E7%A6%85.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Sung KuangI</div><div class="author-info-description">我想在此偷窥这个世界</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">31</div></a><a href="/categories/"><div class="headline">类别</div><div class="length-num">13</div></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#OpenFOAM%E5%AD%A6%E4%B9%A0%E4%BA%A4%E6%B5%81"><span class="toc-number">1.</span> <span class="toc-text">OpenFOAM学习交流</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99%EF%BC%9A%E5%AE%89%E8%A3%85%E3%80%81%E8%BF%90%E8%A1%8C%E3%80%81%E7%AE%97%E6%B3%95%E3%80%81%E5%BC%80%E5%8F%91"><span class="toc-number">1.1.</span> <span class="toc-text">学习网站：安装、运行、算法、开发</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#wsl%E7%9A%84%E5%AE%89%E8%A3%85%E3%80%81Ubuntu%E7%9A%84%E5%90%AF%E5%8A%A8%E5%92%8COpenFOAM%E7%9A%84%E8%BF%90%E8%A1%8C"><span class="toc-number">2.1.</span> <span class="toc-text">wsl的安装、Ubuntu的启动和OpenFOAM的运行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C"><span class="toc-number">2.2.</span> <span class="toc-text">运行</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%89%B9%E5%A4%84%E7%90%86"><span class="toc-number">3.</span> <span class="toc-text">批处理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Z-1-CreateCase-bash"><span class="toc-number">3.1.</span> <span class="toc-text">Z-1-CreateCase.bash</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pre-slurm"><span class="toc-number">3.2.</span> <span class="toc-text">pre.slurm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Z-2-RunCase-bash"><span class="toc-number">3.3.</span> <span class="toc-text">Z-2-RunCase.bash</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#run-slurm"><span class="toc-number">3.4.</span> <span class="toc-text">run.slurm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#viscosity"><span class="toc-number">3.5.</span> <span class="toc-text">viscosity</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="toc-number">4.</span> <span class="toc-text">文件结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E5%A4%84%E7%90%86"><span class="toc-number">4.1.</span> <span class="toc-text">后处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#OpenFOAM"><span class="toc-number">4.1.1.</span> <span class="toc-text">OpenFOAM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#paraview"><span class="toc-number">4.1.2.</span> <span class="toc-text">paraview</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90"><span class="toc-number">4.2.</span> <span class="toc-text">常用软件推荐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">4.3.</span> <span class="toc-text">快捷键</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E5%8F%91"><span class="toc-number">5.</span> <span class="toc-text">开发</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: transparent;"><div class="footer-other"><div class="footer-copyright"></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const initValine = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyValine = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const valineConfig = {
+      el: '#vcomment',
+      appId: 'HWWjSbeMwCpqJi4dH8Ux156m-gzGzoHsz',
+      appKey: 'YcYCTO7ecpvmZi9qP2Y6pagT',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      visitor: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || window.location.pathname
+    }
+
+    new Valine(valineConfig)
+  }
+
+  const loadValine = async (el, path) => {
+    if (typeof Valine === 'function') {
+      initValine(el, path)
+    } else {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Valine' === 'Valine'
+      ? window.shuoshuoComment = { loadComment: loadValine }
+      : window.loadOtherComment = loadValine
+    return
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+  const getUtterancesTheme = theme => theme === 'dark' ? 'photon-dark' : 'github-light'
+
+  const loadUtterances = (el = document, key) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyUtterances = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const config = {
+      src: 'https://utteranc.es/client.js',
+      repo: 'red6star/vincent.github.io',
+      theme: getUtterancesTheme(document.documentElement.getAttribute('data-theme')),
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      'issue-term': isShuoshuo ? key : (option && option['issue-term']) || 'pathname'
+    }
+
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => ele.setAttribute(key, value))
+    el.querySelector('#utterances-wrap').appendChild(ele)
+  }
+
+  const changeUtterancesTheme = theme => {
+    const iframe = document.querySelector('#utterances-wrap iframe')
+    if (iframe) {
+      const message = {
+        type: 'set-theme',
+        theme: getUtterancesTheme(theme)
+      };
+      iframe.contentWindow.postMessage(message, 'https://utteranc.es')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeUtterancesTheme, 'utterances')
+
+  if (isShuoshuo) {
+    'Valine' === 'Utterances'
+      ? window.shuoshuoComment = { loadComment: loadUtterances }
+      : window.loadOtherComment = loadUtterances
+    return
+  }
+  
+  if ('Valine' === 'Utterances' || !false) {
+    if (false) btf.loadComment(document.getElementById('utterances-wrap'), loadUtterances)
+    else loadUtterances()
+  } else {
+    window.loadOtherComment = loadUtterances
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

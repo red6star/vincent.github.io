@@ -1,0 +1,539 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>MBTI学习笔记 | Vincent</title><meta name="author" content="Sung KuangI"><meta name="copyright" content="Sung KuangI"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="article">
+<meta property="og:title" content="MBTI学习笔记">
+<meta property="og:url" content="https://www.red6star.top/2025/08/19/20250819%20-%20MBTI/index.html">
+<meta property="og:site_name" content="Vincent">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.red6star.top/img/%E7%A6%85.png">
+<meta property="article:published_time" content="2025-08-19T02:09:06.000Z">
+<meta property="article:modified_time" content="2026-09-12T04:24:28.768Z">
+<meta property="article:author" content="Sung KuangI">
+<meta property="article:tag" content="mbti">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.red6star.top/img/%E7%A6%85.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "MBTI学习笔记",
+  "url": "https://www.red6star.top/2025/08/19/20250819%20-%20MBTI/",
+  "image": "https://www.red6star.top/img/%E7%A6%85.png",
+  "datePublished": "2025-08-19T02:09:06.000Z",
+  "dateModified": "2026-09-12T04:24:28.768Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Sung KuangI",
+      "url": "https://www.red6star.top"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.red6star.top/2025/08/19/20250819%20-%20MBTI/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'MBTI学习笔记',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/Babel.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/%E7%A6%85.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">31</div></a><a href="/categories/"><div class="headline">类别</div><div class="length-num">13</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-book"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent;"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Vincent</span></a><a class="nav-page-title" href="/"><span class="site-name">MBTI学习笔记</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/guestbook/"><i class="fa-fw fa fa-book"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">MBTI学习笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-08-19T02:09:06.000Z" title="发表于 2025-08-19 10:09:06">2025-08-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-09-12T04:24:28.768Z" title="更新于 2026-09-12 12:24:28">2026-09-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%93%B2%E6%80%9D/">哲思</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%93%B2%E6%80%9D/%E6%98%93/">易</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">3.2k</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>MBTI 学习笔记</p>
+<h1 id="Jung’s-personality-theory【荣格的人格理论】"><a href="#Jung’s-personality-theory【荣格的人格理论】" class="headerlink" title="Jung’s personality theory【荣格的人格理论】"></a>Jung’s personality theory【荣格的人格理论】</h1><blockquote>
+<p>Carl Jung【卡尔·荣格】1875— 1961，瑞士心理学家</p>
+</blockquote>
+<h2 id="人格结构理论"><a href="#人格结构理论" class="headerlink" title="人格结构理论"></a>人格结构理论</h2><h3 id="意识层：【自我】"><a href="#意识层：【自我】" class="headerlink" title="意识层：【自我】"></a>意识层：【自我】</h3><p>个体能觉察的心理活动</p>
+<h3 id="个人无意识层：【情结】"><a href="#个人无意识层：【情结】" class="headerlink" title="个人无意识层：【情结】"></a>个人无意识层：【情结】</h3><blockquote>
+<p>个人潜意识层</p>
+</blockquote>
+<p>储存被压抑的欲望、未意识到的知觉及个体经历</p>
+<p>荣格认为，个人无意识比弗洛伊德认为的更接近表面（潜抑的没那么深），荣格疗法不太关心被压抑的童年经历。</p>
+<p>在他看来，现在和未来是分析治疗的关键。</p>
+<h3 id="集体无意识层：【原型】"><a href="#集体无意识层：【原型】" class="headerlink" title="集体无意识层：【原型】"></a>集体无意识层：【原型】</h3><p>包含人类共有的原始意象和原型</p>
+<h2 id="人格动力理论"><a href="#人格动力理论" class="headerlink" title="人格动力理论"></a>人格动力理论</h2><h2 id="人格类型理论"><a href="#人格类型理论" class="headerlink" title="人格类型理论"></a>人格类型理论</h2><p>核心概念：个体的心理取向和心理功能</p>
+<h3 id="两种心理取向"><a href="#两种心理取向" class="headerlink" title="两种心理取向"></a>两种心理取向</h3><blockquote>
+<p>个体如何处理和理解信息</p>
+</blockquote>
+<ul>
+<li>外向 Extraversion</li>
+</ul>
+<blockquote>
+<p>更注重外部世界，喜欢与人互动，对外部刺激更敏感</p>
+<p>通过与他人交流和参与外部活动来获取能量，并且倾向于表达自己的思想和情感</p>
+</blockquote>
+<ul>
+<li>内向 Introversion</li>
+</ul>
+<blockquote>
+<p>更注重内部世界，喜欢独立思考，对内部心理活动更敏感</p>
+<p>他们通过内省和个人思考来获取能量，并且倾向于保留自己的思想和情感。</p>
+</blockquote>
+<h3 id="四种心理功能"><a href="#四种心理功能" class="headerlink" title="四种心理功能"></a>四种心理功能</h3><h4 id="判断"><a href="#判断" class="headerlink" title="判断"></a>判断</h4><ul>
+<li>思维 Thinking -  涉及个体对逻辑、客观事实和原则的关注</li>
+</ul>
+<blockquote>
+<p>客观【理工】：理性思考，逻辑推理，客观、现实</p>
+<p>+e &#x3D; Te：组织能力，领导才能【效率】</p>
+<p>+i &#x3D; Ti：逻辑模型，理论框架【逻辑】</p>
+</blockquote>
+<ul>
+<li>情感 Feeling - 涉及个体对价值观、情感和人际关系的关注</li>
+</ul>
+<blockquote>
+<p>主观【人文】：考虑他人感受，理解他人情感</p>
+<p>+e &#x3D; Fe：社交能力，倾听调解【共情】</p>
+<p>+i &#x3D; Fi：个人信念，道德准则【道德】</p>
+</blockquote>
+<h4 id="知觉"><a href="#知觉" class="headerlink" title="知觉"></a>知觉</h4><ul>
+<li>感觉 Sensing - 涉及个体对于具体细节和实际经验的关注</li>
+</ul>
+<blockquote>
+<p>现在：细节，现实，操作</p>
+<p>+e &#x3D; Se：适应环境，抓住机会，参与活动，冒险【刺激】</p>
+<p>+i &#x3D; Si：实践能力，组织能力【细节】</p>
+</blockquote>
+<ul>
+<li>直觉 Intuition - 涉及个体对于未来可能性和潜在意义的关注</li>
+</ul>
+<blockquote>
+<p>未来：隐含，潜在，洞察，整体</p>
+<p>+e &#x3D; Ne：创造性思维，开放态度【新颖】</p>
+<p>+i &#x3D; Ni：强烈直觉，思考事物本质，探索发展趋势【意义】</p>
+</blockquote>
+<h2 id="人格发展理论"><a href="#人格发展理论" class="headerlink" title="人格发展理论"></a>人格发展理论</h2><h1 id="Sigmund-Freud【西格蒙德·弗洛伊德】"><a href="#Sigmund-Freud【西格蒙德·弗洛伊德】" class="headerlink" title="Sigmund Freud【西格蒙德·弗洛伊德】"></a>Sigmund Freud【西格蒙德·弗洛伊德】</h1><h1 id="荣格八维"><a href="#荣格八维" class="headerlink" title="荣格八维"></a>荣格八维</h1><h2 id="什么是荣格八维"><a href="#什么是荣格八维" class="headerlink" title="什么是荣格八维"></a>什么是荣格八维</h2><p>八维最初的概念来源于荣格的著作《心理类型》，通过态度类型和（判断、知觉）功能类型将人划为8种类型:</p>
+<table>
+<thead>
+<tr>
+<th align="center">主体对客体的态度</th>
+<th align="center">思维（T）</th>
+<th align="center">情感（F）</th>
+<th align="center">感觉（S）</th>
+<th align="center">直觉（N）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>内向型（i）</strong></td>
+<td align="center">内向思维型 - Ti（钛）<br />推理</td>
+<td align="center">内向情感型 - Fi（𫓧）<br />连接</td>
+<td align="center">内向感觉型 - Si（硅）<br />保存</td>
+<td align="center">内向直觉型 - Ni（镍）<br />洞察</td>
+</tr>
+<tr>
+<td align="center"><strong>外向型（e）</strong></td>
+<td align="center">外向思维型 - Te（碲）<br />结构</td>
+<td align="center">外向情感型 - Fe（铁）<br />评估</td>
+<td align="center">外向感觉型 - Se（硒）<br />体验</td>
+<td align="center">外向直觉型 - Ne（氖）<br />构思</td>
+</tr>
+</tbody></table>
+<p>八维竟然能对应八种元素，门捷列夫还是太全能了</p>
+<blockquote>
+<p>每个人（排除严重功能紊乱、心理疾病及人格障碍）都会有完整的八维功能， 各个功能扮演的角色存在差异。</p>
+<p>即”功能等级”：主导功能、辅助功能、第三功能和劣势功能。</p>
+</blockquote>
+<h2 id="如何根据MBTI判断对应的八维功能"><a href="#如何根据MBTI判断对应的八维功能" class="headerlink" title="如何根据MBTI判断对应的八维功能"></a>如何根据MBTI判断对应的八维功能</h2><ol>
+<li>定义MBTI为 <code>ABCD</code></li>
+<li>定义 <code>ABCD</code>的互逆为<code>abcd</code></li>
+</ol>
+<p>所以，对于MBTI为 <code>ABCD</code>的人，</p>
+<p>主导功能为：<code>BA</code></p>
+<p>辅助功能为：<code>Ca</code></p>
+<p>第三功能为：<code>cA</code></p>
+<p>第四功能为：<code>da</code></p>
+<h3 id="一个例子"><a href="#一个例子" class="headerlink" title="一个例子"></a>一个例子</h3><blockquote>
+<p>对于一个MBTI为<code>INFJ</code>的人而言，他的八维功能为</p>
+</blockquote>
+<p>主导功能：<code>Ni</code>	镍</p>
+<p>辅助功能：<code>Fe</code>	铁</p>
+<p>第三功能：<code>Ti</code>	钛</p>
+<p>第四功能：<code>Se</code>	硒</p>
+<hr>
+<h1 id="什么是MBTI"><a href="#什么是MBTI" class="headerlink" title="什么是MBTI"></a>什么是MBTI</h1><blockquote>
+<p>在《心理类型》英文版出版20周年之后，美国的Isabel Myers和Katharine Briggs母女为了将荣格理论在更广泛的人群中推广，并识别出荣格提出的8个心理功能维度上的偏好，她们又增加了第四维度：判断（J）和知觉（P），这四个维度的有机组合, 构成 16 种类型人的个性，也就是我们常说的MBTI理论。</p>
+</blockquote>
+<p><img src="/2025/08/19/20250819%20-%20MBTI/MBTI.png" alt="MBTI"></p>
+<p><a target="_blank" rel="noopener" href="https://catalogue-staging.cpcompany.com/study/teste-myers-briggs-type-indicator.html">图片来源</a></p>
+<p><img src="/2025/08/19/20250819%20-%20MBTI/MBTI2.png" alt="MBTI2"></p>
+<hr>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>维度</strong></th>
+<th align="center"><strong>方向</strong></th>
+<th align="center">方向</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">能量来源</td>
+<td align="center">E：Extroversion 外向<br />从人际交往中获得能量，享受多样化的任务、快速的工作节奏，且擅长多任务处理。</td>
+<td align="center">I：Introversion 内向<br />通常喜欢独自工作或在小团队中协作，更倾向于循序渐进的节奏，并习惯于一次专注于一项任务。</td>
+</tr>
+<tr>
+<td align="center">认知方式</td>
+<td align="center">S：Sensing 感觉<br />是脚踏实地的人，喜欢关注事实和细节，运用常识和过往经验提出切实可行的解决方案。</td>
+<td align="center">N：Intuition 直觉<br />从与人互动中获得能量，享受多样化的任务、快速的工作节奏，且擅长多任务处理。</td>
+</tr>
+<tr>
+<td align="center">判断方式</td>
+<td align="center">T：Thinking 思考<br />倾向于运用逻辑分析做出决策，客观权衡利弊，重视诚实、一致性和公平性</td>
+<td align="center">F：Feeling 情感<br />往往敏感且善于合作，他们根据自身价值观以及自身行为对他人产生的影响来做出决策。</td>
+</tr>
+<tr>
+<td align="center">生活方式</td>
+<td align="center">J：Judging 计划<br />往往条理分明且有备而来，善于制定并坚持计划，且乐于遵守大多数规则。</td>
+<td align="center">P：Perceiving 变化<br />倾向于保持选择余地，喜欢能够即兴行动，并乐于在制定计划时保持灵活。</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">*</td>
+<td align="center">S<br />感觉<br /></td>
+<td align="center">S<br />感觉<br /></td>
+<td align="center">N<br />直觉<br /></td>
+<td align="center">N<br />直觉<br /></td>
+<td align="center">*</td>
+</tr>
+<tr>
+<td align="center">I<br />内倾<br /></td>
+<td align="center">ISTJ<br />负责的<br />执行者<br />【物流师型人格】</td>
+<td align="center">ISFJ<br />尽职的<br />操办者<br />【守卫型人格】</td>
+<td align="center">INFJ<br />洞察的<br />激励者<br />【提倡型人格】</td>
+<td align="center">INTJ<br />远见的<br />战略家<br />【建筑师型人格】</td>
+<td align="center">J<br />判断<br /></td>
+</tr>
+<tr>
+<td align="center">I<br />内倾<br /></td>
+<td align="center">ISTP<br />敏锐的<br />实干家<br />【鉴赏家型人格】</td>
+<td align="center">ISFP<br />务实的<br />管理者<br />【冒险家型人格】</td>
+<td align="center">INFP<br />直觉的<br />斗士<br />【调停型人格】</td>
+<td align="center">INTP<br />健谈的<br />分析师<br />【逻辑学家型人格】</td>
+<td align="center">P<br />感知<br /></td>
+</tr>
+<tr>
+<td align="center">E<br />外倾<br /></td>
+<td align="center">ESTP<br />活力的<br />独行者<br />【企业家型人格】</td>
+<td align="center">ESFP<br />热心的<br />即兴表演者【表演型人格】</td>
+<td align="center">ENFP<br />激情的<br />催化者<br />【竞选型人格】</td>
+<td align="center">ENTP<br />革新的<br />探索者<br />【辩论家型人格】</td>
+<td align="center">P<br />感知<br /></td>
+</tr>
+<tr>
+<td align="center">E<br />外倾<br /></td>
+<td align="center">ESTJ<br />高效的<br />驱动者<br />【总理型人格】</td>
+<td align="center">ESFJ<br />忠诚的<br />承建者<br />【执政官型人格】</td>
+<td align="center">ENFJ<br />迷人的<br />动员者<br />【主人公型人格】</td>
+<td align="center">ENTJ<br />战略的<br />领导者<br />【指挥官型人格】</td>
+<td align="center">J<br />判断<br /></td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td align="center">T<br />思维<br /></td>
+<td align="center">F<br />情感<br /></td>
+<td align="center">F<br />情感<br /></td>
+<td align="center">T<br />思维<br /></td>
+<td align="center">*</td>
+</tr>
+</tbody></table>
+<p><img src="/2025/08/19/20250819%20-%20MBTI/line.jpg" alt="line"></p>
+<h2 id="功能树理论"><a href="#功能树理论" class="headerlink" title="功能树理论"></a>功能树理论</h2><p><a target="_blank" rel="noopener" href="https://tinystrategies.blog/category">Myers-Briggs Hierarchy of Functions</a></p>
+<blockquote>
+<p>强势功能的存在本身就代表着对弱势功能的挤压</p>
+</blockquote>
+<p>第一、二、六、三功能提供的是正反馈拉力，越做越擅长，进而也越来越喜欢这些功能所对应的事物。</p>
+<p>第四、五、七、八功能提供的是负反馈推力，越做越感到难堪、无助、厌烦，进而逃避这些功能所对应的事物。</p>
+<p>这些劣势功能便成为了一个人的阴面，需要被克服。</p>
+<p>对于第四功能，我们可能会因为羞耻而逃避，但这种羞耻中潜藏着让其变得强大、优秀的渴望，逃避中暗含着美好的期盼，持一种正向的态度。</p>
+<blockquote>
+<p>人们对于那些能够熟练使用第四功能的人，往往是持正面评价的。</p>
+</blockquote>
+<h3 id="Dominant-主导功能【英雄地位】"><a href="#Dominant-主导功能【英雄地位】" class="headerlink" title="Dominant 主导功能【英雄地位】"></a>Dominant 主导功能【英雄地位】</h3><blockquote>
+<p>最发达、最有意识、获得最多能量，代表了个性的核心</p>
+</blockquote>
+<p>在生命的前半段，开始依赖主导过程</p>
+<blockquote>
+<p>如果一致使用主导过程，就会有一个片面的性格：<code>总是吸收信息却从不做决定</code>或者<code>总是匆忙做决定从不吸收信息</code></p>
+<p>因此需要第二个平衡过程，即辅助功能</p>
+</blockquote>
+<h3 id="Auxiliary-辅助功能【父母地位】"><a href="#Auxiliary-辅助功能【父母地位】" class="headerlink" title="Auxiliary  辅助功能【父母地位】"></a>Auxiliary  辅助功能【父母地位】</h3><blockquote>
+<p>在优势过程之后发展，辅助</p>
+</blockquote>
+<p>在青春期和成年早期，倾向于发展和依赖主导和辅助功能，对未出现的类型（代码字母）较少 关注</p>
+<h3 id="Tertiary-第三功能【青年地位】"><a href="#Tertiary-第三功能【青年地位】" class="headerlink" title="Tertiary   第三功能【青年地位】"></a>Tertiary   第三功能【青年地位】</h3><blockquote>
+<p>第三过程经常在压力下被激活</p>
+</blockquote>
+<p>这个过程的自然发展往往发生在你成熟并对主导和辅助过程感到满意之后的中年</p>
+<h3 id="Inferior-第四功能【婴儿地位】"><a href="#Inferior-第四功能【婴儿地位】" class="headerlink" title="Inferior  第四功能【婴儿地位】"></a>Inferior  第四功能【婴儿地位】</h3><blockquote>
+<p> 劣质过程的发展往往发生在中年晚期。它可能是巨大压力的根源，也可能是重大个人发展的种子——通常两者兼而有之。</p>
+</blockquote>
+<p>在疾病、疲劳、身体或心理创伤、重大人生转变等极端压力下，低级过程可能会在无意识的情况下出现，并试图压倒主导和辅助过程。</p>
+<p>低劣的过程可能会以幼稚、不成熟的方式表现出来，并对我们的生活造成严重破坏。</p>
+<h3 id="一个例子-1"><a href="#一个例子-1" class="headerlink" title="一个例子"></a>一个例子</h3><blockquote>
+<p>对于一个MBTI为<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/427728618">INFJ</a>的人而言，他的八维功能为</p>
+</blockquote>
+<p>主导功能：<code>Ni</code></p>
+<p>辅助功能：<code>Fe</code></p>
+<p>第三功能：<code>Ti</code></p>
+<p>第四功能：<code>Se</code></p>
+<blockquote>
+<p>尝试解读：</p>
+<p>打小具有强烈的直觉，能够共情他人。 - 看透人心</p>
+<p>成年后，试图搭建理论框架，思考人心</p>
+<p>最终，会尝试实践，并奔向整合</p>
+</blockquote>
+<h4 id="发展顺序"><a href="#发展顺序" class="headerlink" title="发展顺序"></a>发展顺序</h4><blockquote>
+<p>第一功能是唯一一个基本上不需要去发展，自身就会完善的功能。</p>
+<p>第二功能则在初高中开始苏醒和成长。</p>
+<p>第三功能则在大学时期开始崭露头角，而在那之后的5-10年后之间第三功能发展得差不多的时候，就会拉开第四功能出场的帷幕。</p>
+<p>因为第三和第三功能都是属于较劣势的功能，处于潜意识中，第三功能的发展和使用必定会拉出第四功能。</p>
+<p>这个过渡时期很容易让功能使用者产生一种不稳定性，且第四功能是一个人极其敏感的功能。</p>
+</blockquote>
+<h4 id="第一阶段【Ni】【育红班、小学】"><a href="#第一阶段【Ni】【育红班、小学】" class="headerlink" title="第一阶段【Ni】【育红班、小学】"></a>第一阶段【Ni】【育红班、小学】</h4><p>自闭ing</p>
+<h4 id="第二阶段【Fe】【初高中、大学、硕博】"><a href="#第二阶段【Fe】【初高中、大学、硕博】" class="headerlink" title="第二阶段【Fe】【初高中、大学、硕博】"></a>第二阶段【Fe】【初高中、大学、硕博】</h4><p>第二功能发展的阶段INFJ会开始尝试与外部世界构建起联系，融入各类的社交圈，他们在这个与外界交互的过程中探索人际交往或联系的特点，是INFJ尤其活跃的一个时期。</p>
+<h4 id="第三阶段【Ti】【博士】"><a href="#第三阶段【Ti】【博士】" class="headerlink" title="第三阶段【Ti】【博士】"></a>第三阶段【Ti】【博士】</h4><p>当INFJ已经充分的明白如何与他人建立起社交联系，社交联系的形式也被摸索透后，INFJ会进入一个新的阶段，第三功能，即<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=183180366&content_type=Article&match_order=1&q=Ti&zhida_source=entity">Ti</a>的发展期。</p>
+<p>这个时期的INFJ会开始关注一些理论，开始查阅大量的书籍，好奇一件事物背后的原因及如何运作等。</p>
+<p>同时Ti与Fe是成组的功能，其发展必定会对Fe有着明显的影响，其中一个特征是INFJ会对社交的圈子以及朋友有更强的偏好和选择，不再像Fe发展期一样大量地出现在社交场合中，减少和朋友出去玩的频率。</p>
+<h4 id="第四阶段【Se】【博士】"><a href="#第四阶段【Se】【博士】" class="headerlink" title="第四阶段【Se】【博士】"></a>第四阶段【Se】【博士】</h4><p>当Se开始发展时，会让INFJ处于一种十分不稳定的状态。</p>
+<p>在此阶段，INFJ也会对第四功能Se有强烈的需求，即无时无刻想要吃东西，对性有强烈的需求等，</p>
+<p>同时其对开始对美有更多更高的需求比如想要去纠正牙齿等一些去修正外表上的天生不足的想法。</p>
+<p>对事物的多样性需求更高，如买衣服吃东西不再像以前那样只买一些高质量的或者试过很喜欢的，会更愿意去尝试各种不同口味和风格，新的东西。</p>
+<p>也因为Se的出现，让INFJ看待事物的视角更加地完整，不再像之前那样的扭曲和偏激。所以INFJ会变得比之前更加地包容，从容和有耐心，从而外显地更加开放。</p>
+<p>按照功能树理论，完成自我整合是一个人发展的必经之路，而第四功能作为整合的重点对象，其开始发展就是奔向整合的重点过程。</p>
+<h4 id="自我整合"><a href="#自我整合" class="headerlink" title="自我整合"></a>自我整合</h4><p>另外，不是每个人都是顺利地整合自我，因为第四功能是那样地敏感和危险，如果一个人没能在其整合的过程中用正确的方式去发展，就会出现如一三功能Loop，一四功能Grip等状况，使一个人进入一种异常的状态。</p>
+<p>完成自我的整合，需要一定的心理智慧和自我意识，其中重要的一环是自我认知。荣格八维就是一个很有效的方式，另外通过一些具备Ti功能的咨询师如INTP&#x2F;ENTP或者INFJ去进行辅助，也是完整自我整合的一个道路。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/mbti/">mbti</a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="comment-switch"><span class="first-comment">Valine</span><span id="switch-btn"></span><span class="second-comment">Utterances</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="utterances-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/%E7%A6%85.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Sung KuangI</div><div class="author-info-description">我想在此偷窥这个世界</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">31</div></a><a href="/categories/"><div class="headline">类别</div><div class="length-num">13</div></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Jung%E2%80%99s-personality-theory%E3%80%90%E8%8D%A3%E6%A0%BC%E7%9A%84%E4%BA%BA%E6%A0%BC%E7%90%86%E8%AE%BA%E3%80%91"><span class="toc-number">1.</span> <span class="toc-text">Jung’s personality theory【荣格的人格理论】</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%BA%E6%A0%BC%E7%BB%93%E6%9E%84%E7%90%86%E8%AE%BA"><span class="toc-number">1.1.</span> <span class="toc-text">人格结构理论</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%84%8F%E8%AF%86%E5%B1%82%EF%BC%9A%E3%80%90%E8%87%AA%E6%88%91%E3%80%91"><span class="toc-number">1.1.1.</span> <span class="toc-text">意识层：【自我】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E6%97%A0%E6%84%8F%E8%AF%86%E5%B1%82%EF%BC%9A%E3%80%90%E6%83%85%E7%BB%93%E3%80%91"><span class="toc-number">1.1.2.</span> <span class="toc-text">个人无意识层：【情结】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E4%BD%93%E6%97%A0%E6%84%8F%E8%AF%86%E5%B1%82%EF%BC%9A%E3%80%90%E5%8E%9F%E5%9E%8B%E3%80%91"><span class="toc-number">1.1.3.</span> <span class="toc-text">集体无意识层：【原型】</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%BA%E6%A0%BC%E5%8A%A8%E5%8A%9B%E7%90%86%E8%AE%BA"><span class="toc-number">1.2.</span> <span class="toc-text">人格动力理论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%BA%E6%A0%BC%E7%B1%BB%E5%9E%8B%E7%90%86%E8%AE%BA"><span class="toc-number">1.3.</span> <span class="toc-text">人格类型理论</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E7%A7%8D%E5%BF%83%E7%90%86%E5%8F%96%E5%90%91"><span class="toc-number">1.3.1.</span> <span class="toc-text">两种心理取向</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E7%A7%8D%E5%BF%83%E7%90%86%E5%8A%9F%E8%83%BD"><span class="toc-number">1.3.2.</span> <span class="toc-text">四种心理功能</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A4%E6%96%AD"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">判断</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%A5%E8%A7%89"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">知觉</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%BA%E6%A0%BC%E5%8F%91%E5%B1%95%E7%90%86%E8%AE%BA"><span class="toc-number">1.4.</span> <span class="toc-text">人格发展理论</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Sigmund-Freud%E3%80%90%E8%A5%BF%E6%A0%BC%E8%92%99%E5%BE%B7%C2%B7%E5%BC%97%E6%B4%9B%E4%BC%8A%E5%BE%B7%E3%80%91"><span class="toc-number">2.</span> <span class="toc-text">Sigmund Freud【西格蒙德·弗洛伊德】</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%8D%A3%E6%A0%BC%E5%85%AB%E7%BB%B4"><span class="toc-number">3.</span> <span class="toc-text">荣格八维</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%8D%A3%E6%A0%BC%E5%85%AB%E7%BB%B4"><span class="toc-number">3.1.</span> <span class="toc-text">什么是荣格八维</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%A0%B9%E6%8D%AEMBTI%E5%88%A4%E6%96%AD%E5%AF%B9%E5%BA%94%E7%9A%84%E5%85%AB%E7%BB%B4%E5%8A%9F%E8%83%BD"><span class="toc-number">3.2.</span> <span class="toc-text">如何根据MBTI判断对应的八维功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E4%BE%8B%E5%AD%90"><span class="toc-number">3.2.1.</span> <span class="toc-text">一个例子</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFMBTI"><span class="toc-number">4.</span> <span class="toc-text">什么是MBTI</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E6%A0%91%E7%90%86%E8%AE%BA"><span class="toc-number">4.1.</span> <span class="toc-text">功能树理论</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Dominant-%E4%B8%BB%E5%AF%BC%E5%8A%9F%E8%83%BD%E3%80%90%E8%8B%B1%E9%9B%84%E5%9C%B0%E4%BD%8D%E3%80%91"><span class="toc-number">4.1.1.</span> <span class="toc-text">Dominant 主导功能【英雄地位】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Auxiliary-%E8%BE%85%E5%8A%A9%E5%8A%9F%E8%83%BD%E3%80%90%E7%88%B6%E6%AF%8D%E5%9C%B0%E4%BD%8D%E3%80%91"><span class="toc-number">4.1.2.</span> <span class="toc-text">Auxiliary  辅助功能【父母地位】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tertiary-%E7%AC%AC%E4%B8%89%E5%8A%9F%E8%83%BD%E3%80%90%E9%9D%92%E5%B9%B4%E5%9C%B0%E4%BD%8D%E3%80%91"><span class="toc-number">4.1.3.</span> <span class="toc-text">Tertiary   第三功能【青年地位】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Inferior-%E7%AC%AC%E5%9B%9B%E5%8A%9F%E8%83%BD%E3%80%90%E5%A9%B4%E5%84%BF%E5%9C%B0%E4%BD%8D%E3%80%91"><span class="toc-number">4.1.4.</span> <span class="toc-text">Inferior  第四功能【婴儿地位】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E4%BE%8B%E5%AD%90-1"><span class="toc-number">4.1.5.</span> <span class="toc-text">一个例子</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%91%E5%B1%95%E9%A1%BA%E5%BA%8F"><span class="toc-number">4.1.5.1.</span> <span class="toc-text">发展顺序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E3%80%90Ni%E3%80%91%E3%80%90%E8%82%B2%E7%BA%A2%E7%8F%AD%E3%80%81%E5%B0%8F%E5%AD%A6%E3%80%91"><span class="toc-number">4.1.5.2.</span> <span class="toc-text">第一阶段【Ni】【育红班、小学】</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%E3%80%90Fe%E3%80%91%E3%80%90%E5%88%9D%E9%AB%98%E4%B8%AD%E3%80%81%E5%A4%A7%E5%AD%A6%E3%80%81%E7%A1%95%E5%8D%9A%E3%80%91"><span class="toc-number">4.1.5.3.</span> <span class="toc-text">第二阶段【Fe】【初高中、大学、硕博】</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E9%98%B6%E6%AE%B5%E3%80%90Ti%E3%80%91%E3%80%90%E5%8D%9A%E5%A3%AB%E3%80%91"><span class="toc-number">4.1.5.4.</span> <span class="toc-text">第三阶段【Ti】【博士】</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E9%98%B6%E6%AE%B5%E3%80%90Se%E3%80%91%E3%80%90%E5%8D%9A%E5%A3%AB%E3%80%91"><span class="toc-number">4.1.5.5.</span> <span class="toc-text">第四阶段【Se】【博士】</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E6%88%91%E6%95%B4%E5%90%88"><span class="toc-number">4.1.5.6.</span> <span class="toc-text">自我整合</span></a></li></ol></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: transparent;"><div class="footer-other"><div class="footer-copyright"></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const initValine = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyValine = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const valineConfig = {
+      el: '#vcomment',
+      appId: 'HWWjSbeMwCpqJi4dH8Ux156m-gzGzoHsz',
+      appKey: 'YcYCTO7ecpvmZi9qP2Y6pagT',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      visitor: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || window.location.pathname
+    }
+
+    new Valine(valineConfig)
+  }
+
+  const loadValine = async (el, path) => {
+    if (typeof Valine === 'function') {
+      initValine(el, path)
+    } else {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Valine' === 'Valine'
+      ? window.shuoshuoComment = { loadComment: loadValine }
+      : window.loadOtherComment = loadValine
+    return
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+  const getUtterancesTheme = theme => theme === 'dark' ? 'photon-dark' : 'github-light'
+
+  const loadUtterances = (el = document, key) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyUtterances = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const config = {
+      src: 'https://utteranc.es/client.js',
+      repo: 'red6star/vincent.github.io',
+      theme: getUtterancesTheme(document.documentElement.getAttribute('data-theme')),
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      'issue-term': isShuoshuo ? key : (option && option['issue-term']) || 'pathname'
+    }
+
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => ele.setAttribute(key, value))
+    el.querySelector('#utterances-wrap').appendChild(ele)
+  }
+
+  const changeUtterancesTheme = theme => {
+    const iframe = document.querySelector('#utterances-wrap iframe')
+    if (iframe) {
+      const message = {
+        type: 'set-theme',
+        theme: getUtterancesTheme(theme)
+      };
+      iframe.contentWindow.postMessage(message, 'https://utteranc.es')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeUtterancesTheme, 'utterances')
+
+  if (isShuoshuo) {
+    'Valine' === 'Utterances'
+      ? window.shuoshuoComment = { loadComment: loadUtterances }
+      : window.loadOtherComment = loadUtterances
+    return
+  }
+  
+  if ('Valine' === 'Utterances' || !false) {
+    if (false) btf.loadComment(document.getElementById('utterances-wrap'), loadUtterances)
+    else loadUtterances()
+  } else {
+    window.loadOtherComment = loadUtterances
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
